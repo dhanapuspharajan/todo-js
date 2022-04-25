@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Todo js</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="item1">
+        <div class="left">
+          <h1>Tasks</h1>
+          <span>List</span>
+        </div>
+        <div class="right">
+          <i id="add-icon" class="material-icons" onclick="addIconClick()">
+            add_circle</i
+          ><span>Add item</span>
+        </div>
+      </div>
+      <div class="item2" id="card-con"></div>
+    </div>
+    <div class="dailog" id="dailog">
+      <section class="first">
+        <h1>Add New Item</h1>
+        <input type="text" placeholder="Add New Item" id="list-input" />
+      </section>
+      <div class="btns">
+        <button id="addbtn" onclick="addItem()">Add</button>
+        <button id="cancelbtn" onclick="cancel()">Cancel</button>
+      </div>
+    </div>
+    <div class="dailogforlist" id="dailogforlist">
+      <section class="first">
+        <h1>Add New List</h1>
+        <input type="text" placeholder="Add New List" id="list-input2" />
+      </section>
+      <div class="btns">
+        <button id="addlist">Add</button>
+        <button id="cancelbtn" onclick="cancel()">Cancel</button>
+      </div>
+    </div>
+
+    <h1 id="empty">Add Task items</h1>
+
+    <script src="dpr.js"></script>
+  </body>
+</html>
